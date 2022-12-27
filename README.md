@@ -1,1 +1,1 @@
-# pangeatech-react-assignment
+## pangeatech-assignment

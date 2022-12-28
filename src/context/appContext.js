@@ -24,7 +24,7 @@ const AppProvider = ({ children }) => {
   const getData = async () => {
     dispatch({ type: GET_DATA_BEGIN });
     try {
-      const { data } = await axios.get("http://fetest.pangeatech.net/data");
+      const { data } = await axios.get("https://fetest.pangeatech.net/data");
       const revenueTypes = [...new Set(data.map((item) => item.revenue_type))];
       dispatch({
         type: GET_DATA_SUCCESS,
